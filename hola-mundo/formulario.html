@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+
+  <!-- 
+            1. Formulario campos: Nombre, Apellidos y edad
+            2. Botón de enviar el formulario: evento submit
+            3. Mostrar esos datos por pantalla una vez enviado
+            4. Tener un botón que al darle click nos muestra los datos actuales del formulario
+            5. Validacion del formulario
+        -->
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title> Ejercicio DOM, Eventos y funciones - Curso JS </title>
+    <style>
+        .box{
+            border: 3px dashed black;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="title"> Ejercicio DOM, Eventos y funciones - Curso JS </h1>
+    <p id="description"> Este es un formulario que he reciclado para añadir funciones del curso de Victor </p>
+    <form id="form" action="#" onsubmit="return false">
+        <fieldset> 
+         <label id="name-label">Nombre<input id="nombre" type="text" placeholder="Introduce tu nombre" required />
+         </label>
+         <span class="error_nombre"></span>
+      </fieldset>
+      <fieldset> 
+         <label id="apellidos-label">Apellidos <input id="apellidos" type="text" placeholder="Introduce tus apellidos" required/> 
+         </label>   
+      </fieldset>
+      <fieldset>
+         <label id="number-label"> Año de nacimiento <input id="number" type="number" min="1900" max="2012" placeholder="Año de nacimiento" required /> 
+         </label>
+      </fieldset>
+      
+        <button class="comprobar">Comprobar los datos actuales</button>
+        <input type="submit" value="Enviar" id="submit" />
+        <div class="box">
+            <h1>Datos enviados al formulario</h1>
+        </div>
+        <!-- SCRIPT -->
+        <script type="text/javascript" src="js/32-ejercicio-dom.js"></script>
+  </body>
+  </html>

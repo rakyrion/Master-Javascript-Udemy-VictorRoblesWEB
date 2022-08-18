@@ -1,0 +1,67 @@
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 20;
+  margin-top: 50;
+  background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.5), rgba(136, 136, 206, 0.5) ), url(https://www.islabit.com/wp-content/uploads/2019/05/Blockchain-neo-3.0.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #1b1b32;
+  font-family: Verdana;
+	font-size: 18px;
+  color:#f5f6f7;
+}
+h1, p {
+  text-align: center;
+  margin-top: 5;
+  margin-bottom: 20;
+}
+form {
+  background: rgba(42,61,79,0.8);
+  width: 60vw;
+  max-width: 600px;
+	min-width: 400px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  border-radius: 0.5rem;
+}
+fieldset {
+  border: none;
+  margin-top: 4;
+  margin-bottom: 4;
+}
+label {
+  display:block;
+  padding: 2px;
+}
+input {
+  border: 1px solid #587A99;
+  border-radius: 0.25rem;
+  background-color:;
+  Color:#2D3134;
+}
+::placeholder {
+  color: #566573;
+}
+input,
+textarea,
+select {
+  margin: 4px 0 0 0;
+	width: 100%;
+  min-height: 2.5em;
+  font-size: 16px;
+}
+  .inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+input[type="submit"] {
+  display: block;
+  width: 75%;
+  height: 3em;
+  margin: 1em auto;
+  background-color: #2980B9;
+  color: #ECF0F1;
+}

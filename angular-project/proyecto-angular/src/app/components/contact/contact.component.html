@@ -1,0 +1,22 @@
+<div class="container">
+
+<h1>Contacto</h1>
+<h3>Modifica el tamaño del slider</h3>
+
+<input type="number" [(ngModel)]="widthSlider" (keyup.enter)="cargarSlider()"/>
+<br>
+<h3>Activar/Desactivar captions:</h3>
+
+<select name="select_captions" [(ngModel)]="set_captions" (change)="cargarSlider()">
+    <option value="true">true</option>
+    <option value="false">false</option>
+</select>
+
+<div *ngIf="anchuraToSlider">
+    
+    <slider [anchura]="anchuraToSlider"
+            [etiquetas]="captions"        
+    >
+        </slider>
+</div>
+</div>
